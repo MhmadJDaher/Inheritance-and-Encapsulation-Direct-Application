@@ -26,3 +26,10 @@ class Student(User):
 
     def get_enrolled_courses(self):
         return self.__enrolled_courses
+    
+
+# Subclass: Instructor
+class Instructor(User):
+    def __init__(self, name, email):
+        super().__init__(name, email)
+        self.__teaching_courses = []
