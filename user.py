@@ -7,4 +7,5 @@ class User:
     def get_info(self):
         return f"Name: {self.__name}, Email: {self.__email}"
 
-
+    def set_email(self, new_email):
+        self.__email = new_email
