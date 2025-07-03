@@ -40,3 +40,6 @@ class Instructor(User):
             print(f"Added course to teach: {course_name}")
         else:
             print(f"Already teaching: {course_name}")
+
+    def get_teaching_courses(self):
+        return self.__teaching_courses
