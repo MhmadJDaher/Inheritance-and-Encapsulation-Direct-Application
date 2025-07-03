@@ -4,6 +4,7 @@ class User:
         self.__name = name
         self.__email = email
 
-   
+    def get_info(self):
+        return f"Name: {self.__name}, Email: {self.__email}"
 
 
