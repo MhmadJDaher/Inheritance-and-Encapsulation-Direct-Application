@@ -23,3 +23,6 @@ class Student(User):
             print(f"Enrolled in course: {course_name}")
         else:
             print(f"Already enrolled in: {course_name}")
+
+    def get_enrolled_courses(self):
+        return self.__enrolled_courses
