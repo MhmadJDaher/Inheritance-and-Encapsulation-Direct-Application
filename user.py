@@ -33,3 +33,10 @@ class Instructor(User):
     def __init__(self, name, email):
         super().__init__(name, email)
         self.__teaching_courses = []
+
+    def add_course(self, course_name):
+        if course_name not in self.__teaching_courses:
+            self.__teaching_courses.append(course_name)
+            print(f"Added course to teach: {course_name}")
+        else:
+            print(f"Already teaching: {course_name}")
