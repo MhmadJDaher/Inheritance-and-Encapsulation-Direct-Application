@@ -9,3 +9,10 @@ class User:
 
     def set_email(self, new_email):
         self.__email = new_email
+
+
+# Subclass: Student
+class Student(User):
+    def __init__(self, name, email):
+        super().__init__(name, email)
+        self.__enrolled_courses = []
